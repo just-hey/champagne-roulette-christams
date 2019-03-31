@@ -4,7 +4,6 @@ import "../styles/Home.css";
 class Home extends React.Component {
   handleClick = () => {
     console.log('hey from home');
-    this.props.clickHandler(this.props.name);
   };
 
   render() {
