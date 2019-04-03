@@ -10,7 +10,7 @@ class Contact extends React.Component {
   render() {
     return (
       <div>
-        <h1>hey it's contact</h1>
+        <h1>hey it is for contact</h1>
       </div>
     );
   }
