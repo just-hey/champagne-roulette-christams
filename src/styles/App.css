@@ -1,5 +1,17 @@
-.App {
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+
+html {
     background-color: #2f254a;
     /* other teal color: #00ffc1 */
     height: 100vh;
+    font-family: "Ubuntu";
+    color: #E3E4E2;
+    font-size: 28pt;
 }
+
+a {
+    color: #00ffc1;
+    text-decoration: none;
+}
+
+
