@@ -1,17 +1,57 @@
 @import url("https://fonts.googleapis.com/css?family=Ubuntu");
 
-html {
+body .home {
     background-color: #2f254a;
     /* other teal color: #00ffc1 */
     height: 100vh;
+    width: 100vw;
     font-family: "Ubuntu";
     color: #E3E4E2;
     font-size: 28pt;
 }
 
-a {
+body .about {
+    background-color:#00ffc1 ;
+    /* other teal color: #00ffc1 */
+    height: 100vh;
+    width: 100vw;
+    font-family: "Ubuntu";
+    color: #2f254a !important;
+    font-size: 28pt;
+}
+
+hr {
+    width: 100%;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #00ffc1;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.container>div {
+    display: flex;
+    flex-direction: column;
+}
+
+p:nth-child(2) {
+    margin-top: 0px;
+}
+
+.home a {
     color: #00ffc1;
     text-decoration: none;
 }
 
+.about a {
+    color: #C6738C;
+}
 
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
