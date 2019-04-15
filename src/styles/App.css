@@ -1,23 +1,22 @@
-@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+@import url("https://fonts.googleapis.com/css?family=Exo");
+
+html {
+    background-color: #2C2946;
+    font-family: "Exo";
+    font-size: 5vh;
+}
 
 body .home {
-    background-color: #2f254a;
-    /* other teal color: #00ffc1 */
     height: 100vh;
     width: 100vw;
-    font-family: "Ubuntu";
     color: #E3E4E2;
-    font-size: 28pt;
 }
 
 body .about {
     background-color:#00ffc1 ;
-    /* other teal color: #00ffc1 */
     height: 100vh;
     width: 100vw;
-    font-family: "Ubuntu";
-    color: #2f254a !important;
-    font-size: 28pt;
+    color: #2C2946 !important;
 }
 
 hr {
@@ -30,22 +29,9 @@ hr {
     padding: 0;
 }
 
-.container>div {
+.container > div {
     display: flex;
     flex-direction: column;
-}
-
-p:nth-child(2) {
-    margin-top: 0px;
-}
-
-.home a {
-    color: #00ffc1;
-    text-decoration: none;
-}
-
-.about a {
-    color: #C6738C;
 }
 
 .container {
@@ -54,4 +40,66 @@ p:nth-child(2) {
     justify-content: center;
     padding-left: 10%;
     padding-right: 10%;
+}
+
+.no-margin {
+    margin-top: 0;
+}
+
+.home span {
+    color: #00ffc1 !important;
+    text-decoration: none;
+}
+
+.about span {
+    color: #C6738C;
+    text-decoration: none;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.arrow-input-container {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+}
+
+textarea {
+    padding: 1%;
+    height: 50vh;
+    width: 98%;
+    background-color: #2C2946;
+    color: #E3E4E2 !important;
+    border: none;
+    font-family: "Exo";
+    font-size: 5vh;
+}
+
+textarea::placeholder,
+input::placeholder {
+    color: #E3E4E2
+}
+
+input {
+    padding: 1%;
+    background-color: #2C2946;
+    color: #E3E4E2 !important;
+    border: none;
+    color: #E3E4E2;
+    font-family: "Exo";
+    font-size: 5vh;
+}
+
+svg {
+    fill: #2C2946;
+    height: 5vh !important;
+    width: 5vw !important;
+}
+
+.svg-div {
+    align-self: flex-end;
 }
