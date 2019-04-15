@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import TheRouter from './router.jsx';
 import './styles/App.css';
+import AboutComponent from './components/About.jsx';
+import About2Component from './components/About2.jsx';
+import ContactComponent from './components/Contact.jsx';
 
 class App extends Component {
   render() {
@@ -9,6 +12,9 @@ class App extends Component {
         <header className="App-header">
           <TheRouter/>
         </header>
+        <AboutComponent></AboutComponent>
+        <About2Component></About2Component>
+        <ContactComponent></ContactComponent>
       </div>
     );
   }
