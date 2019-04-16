@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../styles/About.css';
 
 class About2 extends Component {
   handleClick = () => {
@@ -9,11 +8,11 @@ class About2 extends Component {
 
   render() {
     return (
-      <div>
-        <p>
-            I spent high school and three years in college learning Graphic Design before choosing to get a degree in Industrial Design and still enjoy embarking on graphic projects today.
-            Creating vector graphics for <a href="/">t-shirts</a> and <a href="/">logos</a> is something I really enjoy.
-        </p>
+      <div className="about">
+        <div className="container">
+          <p>I spent high school and three years in college learning Graphic Design before choosing to get a degree in Industrial Design and still enjoy embarking on graphic projects today.</p>
+          <p>Creating vector graphics for <span>t-shirts</span> and <span>logos</span> is something I really enjoy.</p>
+        </div>
       </div>
     );
   }

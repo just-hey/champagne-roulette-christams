@@ -1,5 +1,105 @@
-.App {
-    background-color: #2f254a;
-    /* other teal color: #00ffc1 */
+@import url("https://fonts.googleapis.com/css?family=Exo");
+
+html {
+    background-color: #2C2946;
+    font-family: "Exo";
+    font-size: 5vh;
+}
+
+body .home {
     height: 100vh;
+    width: 100vw;
+    color: #E3E4E2;
+}
+
+body .about {
+    background-color:#00ffc1 ;
+    height: 100vh;
+    width: 100vw;
+    color: #2C2946 !important;
+}
+
+hr {
+    width: 100%;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #00ffc1;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.container > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.no-margin {
+    margin-top: 0;
+}
+
+.home span {
+    color: #00ffc1 !important;
+    text-decoration: none;
+}
+
+.about span {
+    color: #C6738C;
+    text-decoration: none;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.arrow-input-container {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+}
+
+textarea {
+    padding: 1%;
+    height: 50vh;
+    width: 98%;
+    background-color: #2C2946;
+    color: #E3E4E2 !important;
+    border: none;
+    font-family: "Exo";
+    font-size: 5vh;
+}
+
+textarea::placeholder,
+input::placeholder {
+    color: #E3E4E2
+}
+
+input {
+    padding: 1%;
+    background-color: #2C2946;
+    color: #E3E4E2 !important;
+    border: none;
+    color: #E3E4E2;
+    font-family: "Exo";
+    font-size: 5vh;
+}
+
+svg {
+    fill: #2C2946;
+    height: 5vh !important;
+    width: 5vw !important;
+}
+
+.svg-div {
+    align-self: flex-end;
 }
