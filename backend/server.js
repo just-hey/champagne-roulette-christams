@@ -10,6 +10,10 @@ const port = 3000
 const database = require('./database/client')
 const handlers = require('./handlers/index')
 
+// Middleware setup
+const middleware = require('./middleware/index')
+const auth = middleware.auth
+
 // Multer setup for file uploads
 const Multer = require('multer')
 const multer = Multer()
@@ -21,8 +25,8 @@ const main = async () => {
   // Image routes
   const images = handlers.images
   router.route('/images').get(images.get)
-  router.route('/images').post(multer.single(''), images.upload)
-  router.route('/images/:id').delete(images.remove)
+  router.route('/images').post(auth.authenticate, multer.single(''), images.upload)
+  router.route('/images/:id').delete(auth.authenticate, images.remove)
 
   // Email routes
   const email = handlers.email
