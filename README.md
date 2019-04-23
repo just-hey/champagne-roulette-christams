@@ -1,25 +1,13 @@
-# Juno Portfolio
+# Juno Portfolio Monorepo
 
-## Start server
-`npm run server`
-
-#### Setup Database
-Login to postgres instance as root postgres user:
+## Frontend application
 ```
-psql postgres
+cd frontend
+npm run start
 ```
 
-Create juno database:
+## Backend application
 ```
-CREATE DATABASE juno;
-```
-
-Give permissions to your postgres_user:
-```
-GRANT ALL PRIVILEGES ON DATABASE juno TO {{postgres_user}};
-```
-
-Run migrations:
-```
-npm run migrate;
+cd backend
+npm run start
 ```
