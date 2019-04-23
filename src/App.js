@@ -3,6 +3,7 @@ import TheRouter from './router.jsx';
 import './styles/App.css';
 import AboutComponent from './components/About.jsx';
 import About2Component from './components/About2.jsx';
+import AdminLogin from './components/AdminLogin.jsx';
 import ContactComponent from './components/Contact.jsx';
 
 class App extends Component {
@@ -15,6 +16,7 @@ class App extends Component {
         <AboutComponent/>
         <About2Component/>
         <ContactComponent/>
+        <AdminLogin />
       </div>
     );
   }
