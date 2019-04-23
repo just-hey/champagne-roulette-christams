@@ -15,6 +15,7 @@ class App extends Component {
   }
 
   toggle = (name) => {
+    console.log(name);
     this.setState({
       showModal: !this.state.showModal,
       modalContent: name,
@@ -30,11 +31,11 @@ class App extends Component {
         <Switch>
           <Route exact path='/' component={ () => (
             <div> 
-              <Home />
-              <AboutComponent toggle={this.toggle}/>
+              <Home toggle={this.toggle} />
+              {/* <AboutComponent toggle={this.toggle}/>
               <About2Component />
               <ContactComponent />
-              <AdminLogin />
+              <AdminLogin /> */}
             </div> 
           ) } />
           <Route exact path='/home' component={ Home } /> 
