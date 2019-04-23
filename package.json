@@ -3,13 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "aws-sdk": "^2.441.0",
+    "multer": "^1.4.1",
+    "pg": "^7.10.0",
     "axios": "^0.18.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0",
-    "react-scripts": "2.1.8"
+    "react-scripts": "2.1.8",
+    "uuid": "^3.3.2"
   },
   "scripts": {
+    "dev": "nodemon ./backend/server.js",
+    "server": "pm2 start ./process.json",
+    "migrate": "node ./backend/database/migrate.js",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
