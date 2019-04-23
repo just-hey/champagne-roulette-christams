@@ -6,17 +6,32 @@ import About2Component from './components/About2.jsx';
 import AdminLogin from './components/AdminLogin.jsx';
 import ContactComponent from './components/Contact.jsx';
 import Home from './components/Home.jsx'
+import CarouselModal from './components/CarouselModal.jsx';
 
 class App extends Component {
+  constructor(...args) {
+    super(...args);
+    this.state = { showModal: false };
+  }
+
+  toggle = (name) => {
+    this.setState({
+      showModal: !this.state.showModal,
+      modalContent: name,
+    });
+
+  };
+
   render() {
     return (
     <Router className='App'>
       <React.Fragment>
+        <CarouselModal content={this.state.modalContent} showModal={this.state.showModal}/>
         <Switch>
           <Route exact path='/' component={ () => (
             <div> 
               <Home />
-              <AboutComponent />
+              <AboutComponent toggle={this.toggle}/>
               <About2Component />
               <ContactComponent />
               <AdminLogin />
