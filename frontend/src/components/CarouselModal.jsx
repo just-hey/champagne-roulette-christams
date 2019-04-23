@@ -4,7 +4,7 @@ import Modal from 'react-bootstrap/Modal';
 class CarouselModal extends Component {
 
     render() {
-        switch(this.props.name) {
+        switch(this.props.content) {
             case 'sevenk':
                 return (
                     <Modal
