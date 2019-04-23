@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
 import Modal from 'react-bootstrap/Modal';
+import Contact from './Contact.jsx'
 
 class CarouselModal extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {}
+    }
 
     render() {
         switch(this.props.content) {
@@ -21,8 +26,9 @@ class CarouselModal extends Component {
                         className="modal-style"
                         onHide={ this.props.toggle }
                         aria-labelledby="modal-label"
-                        show={ this.props.showModal }>>
-                        <div>contact</div>
+                        show={ this.props.showModal }>
+                        <button onClick={ this.props.toggle }>Close</button>
+                        <Contact />
                     </Modal>
                 );
             case 'industrial':
@@ -32,6 +38,7 @@ class CarouselModal extends Component {
                         onHide={ this.props.toggle }
                         aria-labelledby="modal-label"
                         show={ this.props.showModal }>
+                        <button onClick={ this.props.toggle }>Close</button>
                         <div>industrial</div>
                     </Modal>
                 );
@@ -42,18 +49,13 @@ class CarouselModal extends Component {
                         onHide={ this.props.toggle }
                         aria-labelledby="modal-label"
                         show={ this.props.showModal } >
+                        <button onClick={ this.props.toggle }>Close</button>
                         <div>graphic</div>
                     </Modal>
                 );
             default:
                 return (
-                    <Modal
-                        className="modal-style"
-                        onHide={ this.props.toggle }
-                        aria-labelledby="modal-label"
-                        show={ this.props.showModal } >
-                        <div>nothing to see here</div>
-                    </Modal>
+                    null
                 );
         }
        
@@ -61,3 +63,13 @@ class CarouselModal extends Component {
 }
 
 export default CarouselModal;
+
+// IGNORE THIS FOR NOW?
+/* <Modal
+    className="modal-style"
+    onHide={ this.props.toggle }
+    aria-labelledby="modal-label"
+    show={ this.props.showModal } >
+    <button onClick={ this.props.toggle }>Close</button>
+    <div>nothing to see here</div>
+</Modal> */

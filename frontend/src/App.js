@@ -25,7 +25,7 @@ class App extends Component {
     return (
     <Router className='App'>
       <React.Fragment>
-        <CarouselModal content={ this.state.modalContent } showModal={ this.state.showModal }/>
+        <CarouselModal content={ this.state.modalContent } toggle={ this.toggle } showModal={ this.state.showModal }/>
         <Switch>
           <Route exact path='/' component={ () => (
             <div> 
