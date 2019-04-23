@@ -19,6 +19,12 @@ body .about {
     color: #2C2946 !important;
 }
 
+body .admin {
+    background-color:#00ffc1 ;
+    height: 100vh;
+    color: #2C2946 !important;
+}
+
 hr {
     width: 100%;
     display: block;

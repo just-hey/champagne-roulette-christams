@@ -11,7 +11,7 @@ class About2 extends Component {
       <div className="about">
         <div className="container">
           <p>I spent high school and three years in college learning Graphic Design before choosing to get a degree in Industrial Design and still enjoy embarking on graphic projects today.</p>
-          <p>Creating vector graphics for <span>t-shirts</span> and <span>logos</span> is something I really enjoy.</p>
+          <p>Creating vector graphics for <span onClick={ () => this.props.toggle('t_shirts') }>t-shirts</span> and <span onClick={ () => this.props.toggle('logos') }>logos</span> is something I really enjoy.</p>
         </div>
       </div>
     );

@@ -9,9 +9,9 @@ class CarouselModal extends Component {
                 return (
                     <Modal
                         className="modal-style"
-                        onHide={this.props.toggle}
+                        onHide={ this.props.toggle }
                         aria-labelledby="modal-label"
-                        show={this.props.showModal} >
+                        show={ this.props.showModal } >
                         <div>sevenk</div>
                     </Modal>
                 );
@@ -19,9 +19,9 @@ class CarouselModal extends Component {
                 return (
                     <Modal
                         className="modal-style"
-                        onHide={this.props.toggle}
+                        onHide={ this.props.toggle }
                         aria-labelledby="modal-label"
-                        show={this.props.showModal}>>
+                        show={ this.props.showModal }>>
                         <div>contact</div>
                     </Modal>
                 );
@@ -29,9 +29,9 @@ class CarouselModal extends Component {
                 return (
                     <Modal
                         className="modal-style"
-                        onHide={this.props.toggle}
+                        onHide={ this.props.toggle }
                         aria-labelledby="modal-label"
-                        show={this.props.showModal}>
+                        show={ this.props.showModal }>
                         <div>industrial</div>
                     </Modal>
                 );
@@ -39,9 +39,9 @@ class CarouselModal extends Component {
                 return (
                     <Modal
                         className="modal-style"
-                        onHide={this.props.toggle}
+                        onHide={ this.props.toggle }
                         aria-labelledby="modal-label"
-                        show={this.props.showModal} >
+                        show={ this.props.showModal } >
                         <div>graphic</div>
                     </Modal>
                 );
@@ -49,9 +49,9 @@ class CarouselModal extends Component {
                 return (
                     <Modal
                         className="modal-style"
-                        onHide={this.props.toggle}
+                        onHide={ this.props.toggle }
                         aria-labelledby="modal-label"
-                        show={this.props.showModal} >
+                        show={ this.props.showModal } >
                         <div>nothing to see here</div>
                     </Modal>
                 );

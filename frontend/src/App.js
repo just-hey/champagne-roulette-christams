@@ -15,24 +15,22 @@ class App extends Component {
   }
 
   toggle = (name) => {
-    console.log(name);
     this.setState({
       showModal: !this.state.showModal,
       modalContent: name,
     });
-
   };
 
   render() {
     return (
     <Router className='App'>
       <React.Fragment>
-        <CarouselModal content={this.state.modalContent} showModal={this.state.showModal}/>
+        <CarouselModal content={ this.state.modalContent } showModal={ this.state.showModal }/>
         <Switch>
           <Route exact path='/' component={ () => (
             <div> 
-              <Home toggle={this.toggle} />
-              {/* <AboutComponent toggle={this.toggle}/>
+              <Home toggle={ this.toggle } />
+              {/* <AboutComponent toggle={ this.toggle }/>
               <About2Component />
               <ContactComponent />
               <AdminLogin /> */}
