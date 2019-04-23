@@ -36,7 +36,7 @@ class App extends Component {
               <ContactComponent />
               <AdminLogin />
             </div> 
-          ) } />
+          )} />
           <Route exact path='/home' component={ Home } /> 
           <Route exact path='/about' component={ AboutComponent } />
           <Route exact path='/about2' component={ About2Component } />
