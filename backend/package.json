@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@sendgrid/mail": "^6.3.1",
     "aws-sdk": "^2.441.0",
+    "express": "^4.16.4",
     "multer": "^1.4.1",
     "pg": "^7.10.0",
     "uuid": "^3.3.2"
