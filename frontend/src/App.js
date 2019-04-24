@@ -20,6 +20,7 @@ class App extends Component {
   }
 
   componentDidMount = async () => {
+    this.saveToken()
     await this.checkLoggedIn();
   }
 

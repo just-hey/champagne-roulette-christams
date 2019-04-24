@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Exo");
 
+ul {
+    list-style-type: none;
+  }
+
 html {
     background-color: #2C2946;
     font-family: "Exo";

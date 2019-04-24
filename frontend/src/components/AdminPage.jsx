@@ -1,11 +1,21 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import { Container } from 'react-bootstrap';
+import AdminListItem from './AdminListItem.jsx'
+import '../styles/App.css'
+
+// update me later plz
+const BASEURL = 'http://localhost:3000'
 
 class AdminPage extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            images: [{ name: 'bill' }]
+            images: [
+                { name: 'bill1', url: 'https://via.placeholder.com/150x150' },
+                { name: 'bill2', url: 'https://via.placeholder.com/150x150' },
+                { name: 'bill3', url: 'https://via.placeholder.com/150x150' }
+            ]
         }
     }
 
@@ -13,10 +23,9 @@ class AdminPage extends Component {
         // this.fetchImg()
     }
     
-    fetchImg = () => {    
-        // fetch images     
-        // axios.get()
-        // set images to state
+    fetchImg = async () => {
+        // const images = await axios.get(`${ BASEURL }/images`)
+        // this.setState({ images: images.data })
     }
 
     uploadImg = () => {
@@ -24,24 +33,17 @@ class AdminPage extends Component {
         // this.fetchImg()
     }
 
-    deleteImg = () => {        
+    deleteImg = (img) => {        
         // send out ask to delete img
         // this.fetchImg()
     }
 
     render() {
-        // loop over images in state
         return (
-            <div>
-                sweet list xD
-                <ul>
-                    <li>wow</li>
-                    <li>wow</li>
-                    <li>wow</li>
-                    <li>wow</li>
-                    <li>wow</li>
-                </ul>
-            </div>
+            <Container>
+                <hr/>
+                { this.state.images.map((image, i) => <AdminListItem key={ i } image={ image } deleteImg={ this.deleteImg } />) }
+            </Container>
         );
     }
 }
